@@ -1,0 +1,15 @@
+.ItemListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    background-color: black;
+}
+
+.ItemListContainer h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
