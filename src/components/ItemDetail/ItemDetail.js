@@ -15,26 +15,29 @@ const ItemDetail = ({id, name, img, category, description, price, stock })=>{
     };
 
     return (
-        <article className='CardItem'>
-            <header className='Header'>
-                <h2 className='ItemHeader'>
+        <article className='cardItem2'>
+            <header>
+                <h2 className='titulo'>
                     {name}
                 </h2>
             </header>
-            <picture>
-                <img src={img} alt={name} className='ItemImg'/>
-            </picture>
-            <section>
-                <p className='Info'>
-                    Categoria: {category}
-                </p>
-                <p className='Info'>
-                    Descripcion: {description}
-                </p>
-                <p className='Info'>
-                    Precio:{price}
-                </p>
-            </section>
+
+            <div className='detalle'>
+                <picture>
+                    <img src={img} alt={name}/>
+                </picture>
+                <section className='info'>
+                    <p>
+                        Categoria: {category}
+                    </p>
+                    <p>
+                        Descripcion: {description}
+                    </p>
+                    <p>
+                        Precio:{price}
+                    </p>
+                </section>
+            </div>
             <footer>
                 {quantityAdd > 0 ? (<NavLink to={`/cart`}>
                     <button className='finalizar'>Finalizar Compra</button>

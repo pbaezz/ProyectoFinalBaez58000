@@ -1,6 +1,7 @@
-.ListGroup{
-    display: flex;
-    flex-direction: row;
+.listGroup{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     background-color: rgb(0, 0, 0);
     margin: 5px;
     align-items: center;

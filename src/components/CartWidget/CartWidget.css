@@ -1,4 +1,11 @@
 .cart{
     background-color: black;
     margin-right: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(243, 247, 2, 0.692);
+}
+
+.cart img{
+    height: 30px;
 }

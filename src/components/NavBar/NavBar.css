@@ -29,15 +29,10 @@
     font-weight: 400;
 }
 
-.navbar-brand-mio h3{
-    color: white;
-    font-weight: 700;
-    font-size: 1.8rem;
-    border: none;
-}
-
 .column a{
     color: rgba(243, 247, 2, 0.322);
+    font-size: 18px;
+
 }
 
 .Option{

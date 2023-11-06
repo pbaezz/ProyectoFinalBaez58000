@@ -11,8 +11,8 @@ const CartWidget = () =>{
     return (
         <NavLink to={`/cart`}>
             <div className="cart">
-                <img src={cart} alt="cart-widget" className="image is-32x32"/>
-                <span className="tag is-info is-medium">{cantItems}</span>
+                <img src={cart} alt="cart-widget"/>
+                <span>{cantItems}</span>
             </div>
         </NavLink>
     );

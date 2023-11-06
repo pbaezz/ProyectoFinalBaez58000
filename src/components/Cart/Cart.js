@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../CartContext/CartContext";
 import { NavLink } from "react-router-dom";
+import './Cart.css';
 
 export const Cart = () =>{
     const {cartList, cartItems, totalPrice, deleteItem, removeList} = useContext(CartContext);
@@ -18,17 +19,17 @@ export const Cart = () =>{
 
     return (
         <div className="container">
-            <h1 className="title">Tu Compra</h1>
+            <h1 className="title">tu compra</h1>
             {cartList.map( (item) =>(
-                <div className="box" key={item.id}>
-                    <div className="colums">
-                        <div className="column is-2">
-                            <img src={item.img} alt={item.name} className="image is-64x64"/>
-                        </div>
-                        <div className="column">{item.name}</div>
-                        <div className="column">Precio ${item.price}</div>
-                        <div className="column">Cantidad: {item.quantity}</div>
-                        <div className="column is-1">
+                <div key={item.id}>
+                    <div className="detailcard">
+                        <picture>
+                            <img src={item.img} alt={item.name}/>
+                        </picture>
+                        <div>{item.name}</div>
+                        <div>Precio ${item.price}</div>
+                        <div>Cantidad: {item.quantity}</div>
+                        <div>
                             <button onClick={()=> deleteItem(item.id)}>Eliminar</button>
                         </div>
                     </div>    

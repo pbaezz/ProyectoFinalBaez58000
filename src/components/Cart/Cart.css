@@ -1,0 +1,14 @@
+.detailcard{
+    display: flex;
+    justify-items: center;
+    background-color: aqua;
+    border-radius: 1px;
+    color: black;
+    
+}
+
+.container img {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+} 
